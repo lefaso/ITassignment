@@ -1,0 +1,13 @@
+!#bin/bash
+if [$# -eq 0]
+then 
+echo "PRECIOUS LEFASO, 15001473, keitumetse.lefaso@studentmail.biust.ac.bw"
+exit
+fi
+if [-f $1]
+then
+time = ls -1 $1 | cat -c 33:59
+echo "file $1 has created on $time"
+else
+echo "file $1 does not exist"
+fi
